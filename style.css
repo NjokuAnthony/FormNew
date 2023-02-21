@@ -5,11 +5,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    height: 100vh;
+}
+
 .parent {
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.class {
+    grid-column: 2/4;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     align-items: center;
 
@@ -18,7 +27,127 @@
 .header {
     background-color: black;
     color: #fff;
-    width: 50%;
+    /* display: flex; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    height: 100%;
     
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(31, 18, 18)
+    
+    
+}
+.form button {
+    width: 300px;
+    height: 40px;
+    background-color: orange;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    /* border: 1px solid #ffffff; */
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.form button:hover {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.click button {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(31, 18, 18);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.click button:hover {
+    width: 400px;
+    background-color: orange;
+    font-weight: bold;
+    color: black;
+}
+
+.anchor {
+    color: #fff;
+    text-decoration: none;
+    /* margin-top: 100px; */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+ 
+.foot  a{
+    color: red;
+}
+
+.class h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.class {
+    background-image: url(./images/city2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-weight: bold;   
+}
+
+.class button {
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    font-weight: bold; 
+}
+
+.class button:hover {
+    width: 400px;
+    background-color: orange;
+    font-weight: bold;
 
 }
