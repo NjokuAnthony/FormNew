@@ -53,10 +53,14 @@ input {
     color: #fff;
     font-weight: bold;
     padding: 20px;
-    background-color: rgb(31, 18, 18)
-    
-    
+    background-color: rgb(31, 18, 18);   
 }
+
+input:hover {
+    border: 2px solid red; 
+    background-color: orange;
+}
+
 .form button {
     width: 300px;
     height: 40px;
@@ -126,12 +130,18 @@ footer {
 
 }
 
+.class h1:hover {
+    font-size: 60px;
+    color: #ffffff;
+}
+
 .class {
-    background-image: url(./images/city2.jpg);
+    background-image: url(/images/city1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-    font-weight: bold;   
+    font-weight: bold; 
+    
+ 
 }
 
 .class button {
@@ -149,5 +159,6 @@ footer {
     width: 400px;
     background-color: orange;
     font-weight: bold;
+    border: #fff;
 
 }
